@@ -1,0 +1,50 @@
+{
+  "name": "study-forge",
+  "version": "1.0.0",
+  "description": "Source-grounded course reviews and exam pattern practice",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "worker": "node --import tsx scripts/worker.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mace-dot/Study-Forg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mace-dot/Study-Forg/issues"
+  },
+  "homepage": "https://github.com/mace-dot/Study-Forg#readme",
+  "dependencies": {
+    "@next/env": "16.3.8",
+    "@supabase/supabase-js": "2.117.2",
+    "jszip": "3.10.2",
+    "mammoth": "1.13.0",
+    "next": "16.3.8",
+    "openai": "7.25.0",
+    "pdfjs-dist": "6.3.289",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "pdf-lib": "1.17.1",
+    "prettier": "3.9.9",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "private": true
+}
